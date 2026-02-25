@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up | RemoteJobs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:Arial;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("images/businesswoman-is-using-laptop-offic.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.signup-box{
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+padding:40px;
+border-radius:15px;
+width:350px;
+text-align:center;
+color:white;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.signup-box h2{
+margin-bottom:20px;
+}
+
+.signup-box input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:none;
+border-radius:6px;
+}
+
+.signup-box button{
+width:100%;
+padding:12px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.signup-box button:hover{
+background:#1e40af;
+}
+
+.signup-box a{
+color:#60a5fa;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="signup-box">
+<h2>Create Account ✨</h2>
+
+<form action="signup.php" method="POST">
+<input type="text" name="username" placeholder="Username" required>
+<input type="email" name="gmail" placeholder="Email Address" required>
+<input type="password" name="password" placeholder="Password" required>
+<input type="text" name="occupation" placeholder="Occupation" required>
+<button type="submit">Sign Up</button>
+</form>
+
+<p>Already have an account?
+<a href="login.html">Login</a></p>
+</div>
+
+</body>
+</html>
